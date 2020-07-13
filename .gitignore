@@ -1,8 +1,8 @@
 target/
 .gradle/
+gradle/
 .idea/
 .settings/
 bin/
 build/
-gradle/
 history/
