@@ -21,6 +21,7 @@ Para la ejecución de este proyecto desdemos tener presente que debemos tener in
 3. ANDROID_HOME: Descarga el SDK de Android y adjuntamos la ruta en donde se encuentra la carpeta, en mi caso se encuentra en C:\Users\elmie\AppData\Local\Android\Sdk
 4. Tener un IDEA instalado para la observación o modificación del código; Adicionalmente deben tener en Android Studio.
 5. Debe instalar el Appium
+6. SONA: Descargar el sonar Scanner y el SONAR.
 
 NOTA: El SDK de Android lo puede obtener en la aplicación Andoid Studio, siguiente los siguientes pasos.
 
@@ -98,3 +99,14 @@ Debido a lo anterior, los datos de los capabilities son:
 }
 
 Con la información anterior ya se muestre encontrar los elementos de la aplicación.
+
+Analizar el codigo con Sonarqube ⌨️️
+
+En la raiz del proyecto debemos de poner el sonar-project.properties, para poder realizar el analisis del codigo.
+
+Los pasos a seguir son:
+1. En el cmd de la carpeta del proyecto ejecutamos  el comando starSonar. 
+2. Abrir el cmd y ejecutamos el comando StartSonar
+3. Abrir en el navegador la URL http://localhost:9000/about
+4. En la carpeta del proyecto se procede abrir el cmd y se ejecuta el comando  sonar -scanner , en otra ventana del mismo proyecto  ejecuto el cmd el comando sonar-scanner
+5. Ingresar a la URL http://localhost:9000/about para analizar el resultado.
