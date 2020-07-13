@@ -18,4 +18,9 @@ Feature: yo como usuario del servicio
         When multiplica los numeros 2 y 3
         Then podra ver el resultado igual a 6
 
+    Scenario: Division exitosa
+        Given que Elvis usa la calculadora
+        When Divide los numeros 2 y 2
+        Then podra ver el resultado igual a 1
+
 

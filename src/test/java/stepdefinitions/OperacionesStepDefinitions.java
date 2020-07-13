@@ -17,6 +17,7 @@ import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import questions.Validar;
+import tasks.Division;
 import tasks.Multiplicacion;
 import tasks.Resta;
 import tasks.Sumar;
@@ -56,6 +57,11 @@ public class OperacionesStepDefinitions {
     @When("^multiplica los numeros (.*) y (.*)$")
     public void multiplicaLosNumerosY(String numero1, String numero2) {
         theActorInTheSpotlight().attemptsTo(Multiplicacion.losNumeros(numero1, numero2));
+    }
+
+    @When("^Divide los numeros (.*) y (.*)$")
+    public void divideLosNumerosY(String numero1, String numero2) {
+        theActorInTheSpotlight().attemptsTo(Division.losNumeros(numero1, numero2));
     }
 
 }
